@@ -2,7 +2,7 @@
 using namespace std;
 
 typedef vector<long long> vl;
-#define vi  vector<int>
+#define vi vector<int>
 
 void solve(){
     int n,i,x;

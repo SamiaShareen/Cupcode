@@ -1,0 +1,1 @@
+{"name":"Local: Array(vector)-D","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\Array(vector)-D.cpp","tests":[{"id":1687499664329,"input":"5\n1 2 100 0 30","output":"A[0] = 1\nA[1] = 2\nA[3] = 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\Array(vector)-D.cpp","group":"local","local":true}

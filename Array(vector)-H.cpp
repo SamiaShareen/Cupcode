@@ -6,6 +6,8 @@ typedef vector<ll> vl;
 #define vi  vector<int>
 #define forcin(n) for(auto &x:n) cin >>x;
 
+//solve with iterator is cool heh ;/
+
 void solve(){
     int n,temp;
     cin >> n;
@@ -24,6 +26,8 @@ void solve(){
     for(it=arr.begin();it!=arr.end();it++)
         cout << *it << ' ';
 }
+
+// what if I use sort func. ?
 
 int main(){
     int t=1;

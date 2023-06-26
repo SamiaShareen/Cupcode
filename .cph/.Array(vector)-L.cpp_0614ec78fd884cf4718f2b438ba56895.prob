@@ -1,0 +1,1 @@
+{"name":"Local: Array(vector)-L","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\Array(vector)-L.cpp","tests":[{"id":1687767361454,"input":"2\n4\n1 6 3 7\n3\n3 1 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\Array(vector)-L.cpp","group":"local","local":true}

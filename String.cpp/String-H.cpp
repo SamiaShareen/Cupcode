@@ -15,7 +15,7 @@ void printVec(vector<int> v , string s=""){
         cout << v[i] << " ";
     cout << "\n";
 }
-// done manually
+// done manually >_<
 void solve2(){
     string s;
     string :: iterator it;
@@ -34,7 +34,7 @@ void solve2(){
     else cout << "Bad\n";
 }
 
-// by using function
+// by using function ;/
  void solve(){
     string s;
     cin >> s;

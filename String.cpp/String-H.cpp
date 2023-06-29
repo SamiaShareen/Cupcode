@@ -38,10 +38,10 @@ void solve2(){
  void solve(){
     string s;
     cin >> s;
-    int l=sz(s);
+    int l=sz(s),n;
     if(l>2){
-        if(s.find("101")<l) cout << "Good\n";
-        else if(s.find("010")<l) cout << "Good\n";
+        if(s.find("101")<l) cout << "Good\n" ;
+        else if(s.find("010")<l) cout << "Good\n" ;
         else cout << "Bad\n";
     }
     else cout << "Bad\n";

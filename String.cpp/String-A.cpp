@@ -15,7 +15,13 @@ void printVec(vector<int> v , string s=""){
 }
 
 void solve(){
-
+    int ls,lt;
+    string s,t;
+    cin >> s >> t;
+    ls=(int)s.size();
+    lt=(int)t.length();
+    cout <<ls << ' ' << lt << endl << s << " " << t;
+    
 }
 
 int main(){

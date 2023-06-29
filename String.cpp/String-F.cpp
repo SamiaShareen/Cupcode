@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef vector<int> vi;
+typedef long long ll;
+typedef vector<ll> vl;
+#define forcin(n) for(auto &x : n) cin >> x
+#define forcout(n) for(auto x : n) cout << x << " "
+#define sz(n) (int)n.size()
+#define el endl
+
+void printVec(vector<int> v , string s=""){
+    cout << s;
+    for(int i=0;i<(int)v.size();i++)
+        cout << v[i] << " ";
+    cout << "\n";
+}
+
+void solve(){
+    int l;
+    string s;
+    cin >> s;
+    l=sz(s);
+    if(l<=10) cout << s<< el;
+    else {
+        cout << s[0] << l-2 << s[l-1] << el;
+    }
+}
+
+int main(){
+    int t=1;
+    cin >> t;          // remove '//' for testcase
+    while(t--){
+        solve();
+    }
+    return 0;
+}

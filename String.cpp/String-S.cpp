@@ -67,12 +67,51 @@ void solve_2(){
         cout << t[i] << el;
 }
 
+// another sol^n by using vector (2d string : vector<string>)
+
+void solve_3(){
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.o", "w", stdout);
+    
+    string str;
+    cin >> str;
+    vector<string> ans; // ans akhon 2D string
+    int sz = str.size();
+    for(int i = 0; i < sz; ) {
+        // Checking for the minimum size of the balancd string from position i
+        // It should be an even sized string
+
+        // agulo sob sodor_bodor ki ami nijao bujtesi na(Jamil_Sir_r_code)
+        // sir addhattik level ae chola gasen :|
+        for(int len = 2; i + len <= sz; len += 2)
+        {
+            int l = 0, r = 0;
+            string temp;
+            for(int j = i; j < i + len; j++) {
+                l += (str[j] == 'L');
+                r += (str[j] == 'R');
+                temp += str[j];
+            }
+            if(l == r) {
+                ans.push_back(temp);
+                i += len;
+                break;
+            }
+        }
+    }
+ 
+    cout << (int) ans.size() << endl;
+    for(int i = 0; i < (int) ans.size(); i++)
+        cout << ans[i] << endl;
+}
+
 int main(){
     int t=1;
     //cin >> t;          // remove '//' for testcase
     while(t--){
         //solve();
-        solve_2();
+        //solve_2();
+        solve_3(); // by_Jamil_sir
     }
     return 0;
 }

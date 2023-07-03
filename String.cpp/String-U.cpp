@@ -18,7 +18,7 @@ void printVec(vector<int> v , string s=""){
         cout << v[i] << " ";
     cout << "\n";
 }
-
+// by finding max/min
 void solve(){
     string s;
     cin >> s;
@@ -33,11 +33,27 @@ void solve(){
     cout << (e<g ? (e<y?(e<p?(e<t?e:t):(p<t?p:t)):(y<p?(y<t?y:t):(p<t?p:t))) : (g<y?(g<p?(g<t?g:t):(p<t?p:t)):(y<p?(y<t?y:t):(p<t?p:t)))) << el;
 }
 
+// by using frequency
+
+void solve_2(){
+    string s,t="egypt"; // inspired from pupil hehe
+    cin >> s;
+    int i=0,a[5]={};
+    for(;s[i];i++){
+        if(s[i]>='A' && s[i]<='Z')
+            s[i]+=32;
+        a[t.find(s[i])]++;
+    }
+    sort(a,a+5);
+    cout << a[0];
+}
+
 int main(){
     int t=1;
     //cin >> t;          // remove '//' for testcase
     while(t--){
-        solve();
+        //solve();
+        solve_2();
     }
     return 0;
 }

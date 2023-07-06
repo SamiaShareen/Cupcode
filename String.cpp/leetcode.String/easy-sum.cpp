@@ -18,7 +18,7 @@ void printVec(vector<int> v , string s=""){
         cout << v[i] << " ";
     cout << "\n";
 }
-
+//leetcode faltu 
 void solve(){
     int n,m,s;
     cin >> n >> m;

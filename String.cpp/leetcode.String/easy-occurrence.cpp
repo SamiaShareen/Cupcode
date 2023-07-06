@@ -18,7 +18,7 @@ void printVec(vector<int> v , string s=""){
         cout << v[i] << " ";
     cout << "\n";
 }
-
+// AC
 void solve(){
     string s,t;
     getline(cin,t);

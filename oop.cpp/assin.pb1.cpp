@@ -8,20 +8,17 @@ class circle{
     void setRadius(double r){
         radius = r;
     }
-    double cal(){
-        return (3.1416*(radius)*(radius));
-    }
     void printInfo(){
         cout << "details of the circle:\n";
         cout << "radius is = " << radius << endl;
         cout << "area is = ";
-        cout << cal() <<endl;
+        cout << fixed << setprecision(2)<<(3.1416*(radius)*(radius)) <<endl;
     }
 };
 
 int main(){
     circle a;
-    double r;
+    int r;
     cin >> r;
     a.setRadius(r);
     a.printInfo();

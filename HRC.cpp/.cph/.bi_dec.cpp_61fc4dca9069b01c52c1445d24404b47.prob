@@ -1,0 +1,1 @@
+{"name":"Local: bi_dec","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\HRC.cpp\\bi_dec.cpp","tests":[{"id":1689351259613,"input":"3\n121\n5\n1000000000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\HRC.cpp\\bi_dec.cpp","group":"local","local":true}

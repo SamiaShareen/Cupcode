@@ -1,5 +1,5 @@
 //1a no.
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -19,7 +19,7 @@ int main(){
     cout << "Enter value:"; cin >> x;       //error found: '<<' hba na '>>' hba
     //6
     int z;
-    Addition  z = x + y;         //No error found
+    /*Addition*/  z = x + y;         //No error found
     return 0;
 }
 
@@ -67,9 +67,9 @@ int main(){
     cout << "Math = " << 90 << endl << "Physics = " << 77 << endl << "Chemistry = " << 80 << endl;
     return 0;
 }
-*/
+
 //2b no.
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -92,9 +92,9 @@ int main(){
     //f2.show();
     return 0;
 }
-*/
+
 //2c
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -119,9 +119,9 @@ int main(){
     addTime(T1,T2);
     return 0;
 }
-*/
+
 //2d
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -142,9 +142,9 @@ int main(){
     }
     return 0;
 }
-*/
+
 //2d or
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -174,9 +174,9 @@ int main(){
     }
     return 0;
 }
-*/
+
 //3a
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -195,9 +195,9 @@ int main(){
 
     return 0;
 }
-*/
+
 //3b 
-/*
+
 //the ans is yes but in each constructor their parameter number should be different
 //this is called constructor overloding(ig) for example: code below
 #include<iostream>
@@ -225,9 +225,9 @@ int main(){
     ob2.get();
     return 0;
 }
-*/
+
 //3b
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -244,9 +244,9 @@ int main(){
     pri(5);
     return 0;
 }
-*/
+
 //3e
-/*
+
 #include<iostream>
 using namespace std;
 
@@ -275,4 +275,3 @@ int main(){
     s2.get();
     return 0;
 }
-*/

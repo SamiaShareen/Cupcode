@@ -41,39 +41,26 @@ int reset(int a,int n){
 
 
 void solve(){
-    int n,c,i,m[110]={},cost=0;
-    cin >> n >> c;
-    vi a(n);
-    forcin(a);
-    int max=*max_element(all(a));
-    //cout << max << el;
-    for(i=0;i<n;i++){
-        m[a[i]]++;
-    }
-    for(i=0;i<=max;i++){
-        if(m[i]<c){
-            cost+=m[i];
+    int a,b,c;
+    cin >> a >> b >> c;
+    if(a==b){
+        if(c%2==0){
+            cout << "Second" <<el;
         }
-        if(m[i]>=c){
-            cost+=c;
+        else{
+            cout << "First" <<el;
         }
     }
-    cout << cost << el;
+    else{
+        if((a+c)>(b+c)){
+            cout << "First" << el;
+        }
+        else{
+            cout << "Second" << el;
+        }
+    }
 }
 
-
-
-
-/*
-
-    ▬▬▬..◙..▬▬▬ 
-    ▂▄▄▄▓▄▄▂ 
-   ◢◤█▀▀████▄▄▄▄     ◢◤ 
-   █▄ █ー  ███▀▀▀▀▀▀▀╬   One day I'm gonna fly away ~~
-   ◥█████◤ 
-   ══╩══╩══
-
-*/
 int main(){
     int t=1;
     cin >> t;          // remove '//' for testcase
@@ -96,5 +83,16 @@ int main(){
     /*
         I don't care that they stole my idea 
         I care that they don't have any of their own
+
+            // from Benq 
+
+        // you should actually read the stuff at the bottom
+ 
+        * stuff you should look for
+        * int overflow, array bounds
+        * special cases (n=1?)
+        * do smth instead of nothing and stay organized
+        * WRITE STUFF DOWN
+        * DON'T GET STUCK ON ONE APPROACH
         
     */

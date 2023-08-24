@@ -39,62 +39,38 @@ int reset(int a,int n){
 /*____________________________________________________________________________________________________________________________________*/
 
 
-
+int a=10;
+int N(int x){
+    return a/x;
+}
 void solve(){
-    int n,c,i,m[110]={},cost=0;
-    cin >> n >> c;
-    vi a(n);
-    forcin(a);
-    int max=*max_element(all(a));
-    //cout << max << el;
-    for(i=0;i<n;i++){
-        m[a[i]]++;
-    }
-    for(i=0;i<=max;i++){
-        if(m[i]<c){
-            cost+=m[i];
+    int n=2,i,ans=0;
+    int m[2]={2,5};   
+
+    for(int mask=1;mask<(1<<n);mask++){
+        int p=1,cnt=0;
+        for(i=0;i<n;i++){
+            if(mask & (1<<i)){
+                p*=m[i];
+                cnt++;
+            }
         }
-        if(m[i]>=c){
-            cost+=c;
+        if(cnt%2==1){
+            ans+=N(p);
+        }
+        else{
+            ans-=N(p);
         }
     }
-    cout << cost << el;
+    cout << ans << el;
+
 }
 
-
-
-
-/*
-
-    ▬▬▬..◙..▬▬▬ 
-    ▂▄▄▄▓▄▄▂ 
-   ◢◤█▀▀████▄▄▄▄     ◢◤ 
-   █▄ █ー  ███▀▀▀▀▀▀▀╬   One day I'm gonna fly away ~~
-   ◥█████◤ 
-   ══╩══╩══
-
-*/
 int main(){
     int t=1;
-    cin >> t;          // remove '//' for testcase
+    //cin >> t;          // remove '//' for testcase
     while(t--){
         solve();
     }
     return 0;
 }
-
-
-
-
-
-/*_____________________________________________IGNORE_________________________________________________________________________________*/
-    
-    // if you come here to read 2nd note is for you
-   // Here I write down my nasty thoughts when I'm frustrated, dont take it seriously :)
-
-
-    /*
-        I don't care that they stole my idea 
-        I care that they don't have any of their own
-        
-    */

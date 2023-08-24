@@ -41,39 +41,42 @@ int reset(int a,int n){
 
 
 void solve(){
-    int n,c,i,m[110]={},cost=0;
-    cin >> n >> c;
-    vi a(n);
+    int n,m;
+    cin >> n >> m;
+    vector<char> a(n),b(m);
     forcin(a);
-    int max=*max_element(all(a));
-    //cout << max << el;
-    for(i=0;i<n;i++){
-        m[a[i]]++;
-    }
-    for(i=0;i<=max;i++){
-        if(m[i]<c){
-            cost+=m[i];
-        }
-        if(m[i]>=c){
-            cost+=c;
+    forcin(b);
+    int i,cnt=0;
+    for(i=0;i<n-1;i++){
+        if(a[i]==a[i+1]){
+            cnt++;
         }
     }
-    cout << cost << el;
+    for(i=0;i<m-1;i++){
+        if(b[i]==b[i+1]){
+            cnt++;
+        }
+    }
+    if(cnt==0){
+        YES;
+        return;
+    }
+    if(a[n-1]==b[m-1] && cnt!=0){
+        NO;
+        return;
+    }
+    else{
+        if(cnt==1 && a[n-1]!=b[m-1]){
+            YES;
+            return;
+        }
+        else{
+            NO;
+            return;
+        }
+    }
 }
 
-
-
-
-/*
-
-    ▬▬▬..◙..▬▬▬ 
-    ▂▄▄▄▓▄▄▂ 
-   ◢◤█▀▀████▄▄▄▄     ◢◤ 
-   █▄ █ー  ███▀▀▀▀▀▀▀╬   One day I'm gonna fly away ~~
-   ◥█████◤ 
-   ══╩══╩══
-
-*/
 int main(){
     int t=1;
     cin >> t;          // remove '//' for testcase
@@ -82,19 +85,3 @@ int main(){
     }
     return 0;
 }
-
-
-
-
-
-/*_____________________________________________IGNORE_________________________________________________________________________________*/
-    
-    // if you come here to read 2nd note is for you
-   // Here I write down my nasty thoughts when I'm frustrated, dont take it seriously :)
-
-
-    /*
-        I don't care that they stole my idea 
-        I care that they don't have any of their own
-        
-    */

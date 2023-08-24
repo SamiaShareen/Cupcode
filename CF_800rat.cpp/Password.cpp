@@ -41,39 +41,24 @@ int reset(int a,int n){
 
 
 void solve(){
-    int n,c,i,m[110]={},cost=0;
-    cin >> n >> c;
+    int n;
+    ll m=1,p=1,i;
+    cin >> n;
     vi a(n);
     forcin(a);
-    int max=*max_element(all(a));
-    //cout << max << el;
-    for(i=0;i<n;i++){
-        m[a[i]]++;
+    n=10-n;
+    for(i=1;i<=n;i++){
+        m=(m*i);
     }
-    for(i=0;i<=max;i++){
-        if(m[i]<c){
-            cost+=m[i];
-        }
-        if(m[i]>=c){
-            cost+=c;
+    if(p!=0){
+        for(i=1;i<=(n-2);i++){
+            p=(p*i);
         }
     }
-    cout << cost << el;
+    cout << ((m)/(2*p))*6 << el;
+
 }
 
-
-
-
-/*
-
-    ▬▬▬..◙..▬▬▬ 
-    ▂▄▄▄▓▄▄▂ 
-   ◢◤█▀▀████▄▄▄▄     ◢◤ 
-   █▄ █ー  ███▀▀▀▀▀▀▀╬   One day I'm gonna fly away ~~
-   ◥█████◤ 
-   ══╩══╩══
-
-*/
 int main(){
     int t=1;
     cin >> t;          // remove '//' for testcase
@@ -82,19 +67,3 @@ int main(){
     }
     return 0;
 }
-
-
-
-
-
-/*_____________________________________________IGNORE_________________________________________________________________________________*/
-    
-    // if you come here to read 2nd note is for you
-   // Here I write down my nasty thoughts when I'm frustrated, dont take it seriously :)
-
-
-    /*
-        I don't care that they stole my idea 
-        I care that they don't have any of their own
-        
-    */

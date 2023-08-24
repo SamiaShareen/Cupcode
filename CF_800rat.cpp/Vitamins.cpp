@@ -21,41 +21,50 @@ void printVec(vector<int> v , string s=""){
     cout << "\n";
 }
 
-// check a bit is 1/0. if 1,return 1 else return 0
-bool check(int a,int n){
-    return (a & (1<<n))!=0;
-}
-
-// set a bit to 1(a r n tomo bit k 1 korbo)
-int set(int a,int n){
-    return a|(1<<n);
-}
-
-// set a bit to 0(a r n tomo bit k 0 korbo)
-int reset(int a,int n){
-    return a&(~(1<<n));
-}
-
 /*____________________________________________________________________________________________________________________________________*/
 
 
 
 void solve(){
+    int n,x,f=0;
     string s;
-    ll n,x=0,i=1;
-    cin >> s >> n;
-    x=s[0]-'0';
-    while(s[i]!='\0'){
-        while(x<=n){
-            x=(x*10)+(s[i]-'0');
-            i++;
+    cin >> n;
+    vi a,m;
+    for(int j=0;j<n;j++){
+        int p=0;
+        cin >> x;
+        cin >> s;
+        a.pb(x);
+        for(int i=0;s[i];i++){
+            p+=(int)s[i];
         }
-        x=x%n;
+        if(p==198 || p==263 || p==264 || p==265){
+            a.pb(x);
+            m.pb(p);
+        }
     }
-    //cout << x << el;
-    if(x==0) YES;
-    else NO;
-    
+    int min=INT_MAX,o=sz(a);
+    for(int mask=1;mask<o;mask++){
+        int p=0,v=0;
+        for(int i=0;i<n;i++){
+            if(mask&(1<<i)){
+                p+=a[i];
+                v+=m[i];
+            }
+        }
+        if(v==198 || v==263 || v==264 || v==265){
+            f=1;
+            if(min>p){
+                min=p;
+            }
+        }
+    }
+    if(f){
+        cout << min << el;
+    }
+    else{
+        cout << "-1" << el;
+    }
 }
 
 int main(){
@@ -66,17 +75,3 @@ int main(){
     }
     return 0;
 }
-
-
-
-
-
-/*_____________________________________________IGNORE_________________________________________________________________________________*/
-    
-    // if you come here to read 2nd note is for you
-   // Here I write down my nasty thoughts when I'm frustrated, dont take it seriously :)
-
-
-    /*
-        u stalker!!!    what u want?
-    */

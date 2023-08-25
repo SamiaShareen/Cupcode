@@ -26,19 +26,22 @@ class student{
     int a=5;
     public:
     float f;
+    //void show();
     friend void show(student);  //we have to call friend function 
 };
 
 void show(student t){
     cout << t.a << endl; //it can access private also
 }
-
+//void student::show(){
+//   cout << a << endl;
+//}
 int main(){     //int hba
     student s1;
     s1.f=2.5;
     show(s1);       // pass an object as argument by calling show func.
 }
-
+/*
 //2c
 #include<iostream>
 using namespace std;

@@ -1,0 +1,1 @@
+{"name":"Local: AQD","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\contest_pblm\\AQD.cpp","tests":[{"id":1700992358946,"input":"2\n15 2 10\n0 0 5","output":"90\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\contest_pblm\\AQD.cpp","group":"local","local":true}

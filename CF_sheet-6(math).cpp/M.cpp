@@ -46,15 +46,18 @@ void solve(){
     cin >> s >> n;
     x=s[0]-'0';
     while(s[i]!='\0'){
-        while(x<=n){
+        while(x<n && s[i]!='\0'){
             x=(x*10)+(s[i]-'0');
             i++;
         }
         x=x%n;
     }
-    //cout << x << el;
-    if(x==0) YES;
-    else NO;
+    if(x==0){
+        YES;
+    }
+    else{
+        NO;
+    }
     
 }
 

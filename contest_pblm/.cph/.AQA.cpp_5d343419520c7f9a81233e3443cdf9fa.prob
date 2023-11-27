@@ -1,0 +1,1 @@
+{"name":"Local: AQA","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\contest_pblm\\AQA.cpp","tests":[{"id":1700991403443,"input":"2\n5\n1 4 2 5 5\n3\n13 12 7","output":"2\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\contest_pblm\\AQA.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: StrangeList","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\CF_900rat.cpp\\StrangeList.cpp","tests":[{"id":1698461688235,"input":"2\n1 2\n12\n4 2\n4 6 8 2","output":"36\n44"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\CF_900rat.cpp\\StrangeList.cpp","group":"local","local":true}

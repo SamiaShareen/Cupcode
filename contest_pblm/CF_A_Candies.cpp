@@ -25,13 +25,26 @@ void printVec(vector<int> v , string s=""){
 
 
 void solve(){
-    int n,i,x;
+    int n,i,cnt1=0,cnt0=0;
     cin >> n;
-    for(i=2;i<30;i++){
-        if((n%((int)(pow(2,i))-1))==0){
-            cout << (n/((int)(pow(2,i)-1))) << el;
-            return;
+    if(n&(1<<0)){
+        for(i=0;(1<<i)<=n;i++){
+            if(n&(1<<i)){
+                cnt1++;
+                if(cnt1/2.0!=0){
+                }
+                else{
+                    cout << 2 <<' ';
+                    cnt1=0;
+                }
+            }
+            else{
+                cout << 0 <<' ';
+            }
         }
+    }
+    else{
+        cout << "-1";
     }
 }
 
@@ -40,6 +53,7 @@ int main(){
     cin >> t;          // remove '//' for testcase
     while(t--){
         solve();
+        cout << el;
     }
     return 0;
 }

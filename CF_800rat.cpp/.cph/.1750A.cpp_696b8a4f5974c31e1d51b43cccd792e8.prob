@@ -1,0 +1,1 @@
+{"name":"Local: 1750A","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\CF_800rat.cpp\\1750A.cpp","tests":[{"id":1694091372040,"input":"5\n1 1\n4 0\n0 2\n0 0\n2314 2374","output":"4\n5\n1\n1\n7063"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\CF_800rat.cpp\\1750A.cpp","group":"local","local":true}

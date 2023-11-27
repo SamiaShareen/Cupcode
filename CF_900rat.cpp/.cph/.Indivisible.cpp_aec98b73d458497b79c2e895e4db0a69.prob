@@ -1,0 +1,1 @@
+{"name":"Local: Indivisible","url":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\CF_900rat.cpp\\Indivisible.cpp","tests":[{"id":1700563594180,"input":"3\n1\n6\n3","output":"1\n1 2\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\CPsetup.cpp\\cupcode\\CF_900rat.cpp\\Indivisible.cpp","group":"local","local":true}
